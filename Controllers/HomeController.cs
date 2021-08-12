@@ -24,7 +24,7 @@ namespace TodoList.Controllers
         {
             if (!string.IsNullOrWhiteSpace(text))
             {
-                Item myItem = new(text);
+                Item myItem = new Item(text);
             }
 
             return RedirectToAction("Index");

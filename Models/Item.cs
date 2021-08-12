@@ -7,7 +7,7 @@ namespace TodoList.Models
         public int Id { get; }
         public string Text { get; set; }
         public bool Checked { get; set; }
-        private static readonly List<Item> _instances = new() { };
+        private static readonly List<Item> _instances = new List<Item>() { };
 
         public Item(string text)
         {
